@@ -1,0 +1,18 @@
+﻿@model EFP.Models.Class
+@{
+    Layout = null;
+}
+@using (Html.BeginForm("Insert", "Demo"))
+{
+    <center>
+    <label>Name</label>
+    @Html.TextBoxFor(x => x.Name)<br>
+    <label>Age</label>
+    @Html.TextBoxFor(x => x.Age)<br>
+    <label>Address</label>
+    @Html.TextBoxFor(x => x.Address)<br>
+    <label>City</label>
+    @Html.TextBoxFor(x => x.City)<br>
+    <button>submit</button>
+    </center>
+}
